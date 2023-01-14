@@ -6,6 +6,8 @@ import {MessageType} from "../HW1";
 export type FriendPropsType = {
     message: MessageType,
     text: string,
+    name: string,
+    time: string
 }
 const FriendMessage = (props: FriendPropsType) => {
     return (
@@ -23,10 +25,9 @@ const FriendMessage = (props: FriendPropsType) => {
                 <div className={s.friendText}>
                     <div
                         id={'hw1-friend-name-' + props.message.id}
-                        className={s.friendName}
-                    >
+                        className={s.friendName}>
                         {/*создаёт студент*/}
-                        FriendName
+                        {props.name}
                         {/**/}
                     </div>
                     <pre id={'hw1-friend-text-' + props.message.id} className={s.friendMessageText}>
@@ -38,7 +39,7 @@ const FriendMessage = (props: FriendPropsType) => {
             </div>
             <div id={'hw1-friend-time-' + props.message.id} className={s.friendTime}>
                 {/*создаёт студент*/}
-                09:01
+                {props.time}
                 {/**/}
             </div>
         </div>
