@@ -5,9 +5,6 @@ import {MessageType} from "../HW1";
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
     message: MessageType,
-    text: string,
-    name: string,
-    time: string
 }
 
 // нужно отобразить приходящие данные
@@ -25,19 +22,19 @@ const Message = (props: MessagePropsType) => {
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
-                        {props.name}
+                        <div>{props.message.user.name}</div>
                         {/**/}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
                         {/*создаёт студент*/}
-                        <div>{props.text}</div>
+                        <div>{props.message.message.text}</div>
                         {/**/}
                     </pre>
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
                 {/*создаёт студент*/}
-                {props.time}
+                <div>{props.message.message.time}</div>
                 {/**/}
             </div>
         </div>
