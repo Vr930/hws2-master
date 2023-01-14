@@ -1,5 +1,5 @@
 .friendMessage {
-
+    width: 1275px;
 }
 
 .friendImageAndText {
@@ -19,8 +19,8 @@
     align-self: flex-end;
     width: 15px;
     height: 15px;
-    background:  #0066cb;
-    background: radial-gradient( circle at 100% 0%, white 15px, #966de8 0);
+    background: #0066cb;
+    background: radial-gradient(circle at 100% 0%, white 15px, #966de8 0);
 }
 
 .friendText {

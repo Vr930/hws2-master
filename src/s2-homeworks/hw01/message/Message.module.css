@@ -16,8 +16,8 @@
     align-self: flex-end;
     width: 15px;
     height: 15px;
-    background:  #0066cb;
-    background: radial-gradient( circle at 0 0, rgba(0, 0, 0, 0) 15px, #0066cb 0);
+    background: #0066cb;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, #0066cb 0);
 }
 
 .text {
@@ -27,7 +27,7 @@
 }
 
 .text:after {
-
+    width: 1275px;
 }
 
 .name {

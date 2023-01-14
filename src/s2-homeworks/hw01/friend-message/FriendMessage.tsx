@@ -4,7 +4,8 @@ import {MessageType} from "../HW1";
 
 // создать тип вместо any и отобразить приходящие данные
 export type FriendPropsType = {
-    message: MessageType
+    message: MessageType,
+    text: string,
 }
 const FriendMessage = (props: FriendPropsType) => {
     return (
@@ -28,12 +29,9 @@ const FriendMessage = (props: FriendPropsType) => {
                         FriendName
                         {/**/}
                     </div>
-                    <pre
-                        id={'hw1-friend-text-' + props.message.id}
-                        className={s.friendMessageText}
-                    >
+                    <pre id={'hw1-friend-text-' + props.message.id} className={s.friendMessageText}>
                         {/*создаёт студент*/}
-                        <div>Hello Name, my name is FriendName</div>
+                        <div>{props.text}</div>
                         {/**/}
                     </pre>
                 </div>
