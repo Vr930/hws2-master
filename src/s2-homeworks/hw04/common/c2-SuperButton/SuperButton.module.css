@@ -1,6 +1,4 @@
 .button {
-    color: white;
-    background-color: #0065cb;
     height: 30px;
     width: 150px;
     font-family: Arial;
@@ -16,13 +14,12 @@
 .secondary {
     color: blue;
     border: 1px solid blue;
-    height: 30px;
-    width: 150px;
     background-color: #e3eef9;
 }
 
 .default {
-
+    color: white;
+    background-color: #0065cb;
 }
 
 .red {
