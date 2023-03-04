@@ -1,7 +1,11 @@
 .input:focus {
+    outline: none;
+    background: #c6c7c6;
 }
 
 .input {
+    font-family: Arial;
+    font-size: 15px;
 }
 
 .inputWrapper {
@@ -11,10 +15,13 @@
 }
 
 .errorInput {
+    border: 1px solid red;
 }
 
 .errorInput:focus {
+    background: #f8a3a3;
 }
 
 .error {
+    color: red;
 }
