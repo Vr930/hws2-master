@@ -4,7 +4,7 @@
 
 .imageAndText {
     display: flex;
-    margin: 20px 20px 0px 50px;
+    padding: 20px 20px 0px 50px;
 }
 
 .imageAndText img {
